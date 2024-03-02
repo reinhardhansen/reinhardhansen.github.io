@@ -1,8 +1,8 @@
 html,body{margin:0;padding:0}	  
 body{font: 95%/1.3 TrebuchetMS,Arial,sans-serif;
     text-align: left;background: #fff;padding-bottom:20px}
-a { color: #0066B3; background: inherit; text-decoration: none;}
-h1 { font: bold 2.1em Arial, Arial, Sans-Serif; color: #036DA7 }
+a  { color: #0066B3; background: inherit; text-decoration: none;}
+h1 { font: bold 1.9em Arial, Arial, Sans-Serif; color: #036DA7; padding: 0;}
 h2 { font: bold 1.1em Arial, Arial, Sans-Serif; padding: 0; margin: 0; }
 h3 { font: bold 1.1em Arial, Arial, Sans-Serif; padding: 0; margin: 0; }
 
@@ -41,13 +41,9 @@ ul#nav a:hover{	background: #fff;
 	background: #fff;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+.text-left  {   text-align: left;   }
+.text-right {  text-align: right;  }
+.text-high { color: #0066B3; } 
 			
 div#footer{	float:left; 
 			font-size: 80%;
@@ -58,12 +54,12 @@ div#footer{	float:left;
 			margin-top: 1.2em;}
 div#footer h1{padding: 30px 0 20px;color: #fff}
 
-a:link    { color: #000; text-decoration: none; }
-a:visited { color: #000; text-decoration: none; } 
-a:hover   { color: red;}
+a:link    { color: #036DA7; text-decoration: none; }
+a:visited { color: #036DA7; text-decoration: none; } 
+a:hover   { color: red}
 
 
-table		 { text-align: left;}
+table		 { text-align: left;  border-spacing: 0 0;}
 table.box	 { font-size: 90%;	margin: 30px 0 0  0;}
 table.center { margin-left:auto; margin-right:auto;}
 caption 	 { font: bold 1.1em Arial; 
@@ -78,10 +74,7 @@ th      	{ font-weight: normal;
 }
 th.affil	{  text-align: right; padding: 0 4px;}
 
-img.floatRight { 
-    float: right; 
-    margin: 4px; 
-}
+img.floatRight {   float: right;    margin: 4px; 	}
 
 
 /* LEFT PANELS   */
@@ -90,56 +83,58 @@ img.floatRight {
 
 #left {
 	float: left;
-	width: 72.6%;
+	width: 73.4%;
 	text-align: justify;
 }
 #left .boxname{
     font-size: 125%;	  
 	padding: 2em;
-	margin: 0 0 0 0;
-	margin-bottom: 0.2em;
+	margin: 0 0 15px 0;
 }
 #left .boxinterests{
     font-size: 110%;	  
-	margin: 0 0 0 0;
-	margin-bottom: 1.2em;
+	margin: 0 0 10px 0;	
 }
 #left .boxlight{
     font-size: 120%;	  
 	padding: 2em;
 	background: #F0F0F0;
-	margin: 0 0 10px 0;
+	margin: 0 0 5px 0;
 	margin-bottom: 1.2em;
 }
 #left .boxlightblue{
     font-size: 120%;
 	padding: 1em;
 	background: #E7F1F8;
-	margin: 0 0 5px 0;
-	margin-bottom: 1.2em;
+	margin: 0 0 15px 0;
 }
+/* Hover state for boxlightblue inside mynav */
+#left a.mynav:hover .boxlightblue {
+	color: #000;
+	font-size: 140%;
+	padding: 0.75em;
+    background-color: #FDEDEC  ; /* Background color on hover */
+}
+
 #left .boxUNC{
 	padding: 1em;
 	background: #E7F1F8;
-	margin: 0 0 5px 0;
-	margin-bottom: 1.2em;
+	margin: 0 0 10px 0;	
 }
 #left .boxEUI{
 	padding: 1em;
 	background: #A6D6F9;
-	margin: 0 0 5px 0;
-	margin-bottom: 1.2em;
+	margin: 0 0 10px 0;
 }
 
 #left .boxStanford{
 	padding: 1em;
 	background: #f0e0e0;
-	margin: 0 0 5px 0;
-	margin-bottom: 1.2em;
+	margin: 0 0 10px 0; 
 }
 #left .boxBrown{
 	padding: 1em;
-	margin: 0 0 1em 0;
+	margin: 0 0 10em 0;
 	background : #DA7D81;
 }
 
@@ -147,8 +142,7 @@ img.floatRight {
 #left .boxlightbluepic{
 	padding: 0em;
 	background: #E7F1F8;
-	margin: 0 0 5px 0;
-	margin-bottom: 1em;
+	margin: 0 0 12px 0; 
 }
 #left .biobox{
 	padding: 2em;
@@ -190,6 +184,79 @@ img.floatRight {
     width: 100%;
 	height: 500px;
 }
+
+/* RESEARCH PAPERS COLLAPSIBLE */
+.paperbox{
+    font-size: 100%;
+	padding: 1.5em;
+	background: #E7F1F8;
+	margin: 0 0 15px 0;
+}
+.paperbox p{
+    margin-top:    4px; /* Reduces the space above the paragraph */
+    margin-bottom: 4px; /* Reduces the space below the paragraph */
+}
+
+.collapsible {
+	cursor: pointer;
+	text-align: left;
+	font-size: 90%;
+	border: none;
+	width: 100%;
+	background-color: #E7F1F8; /* Original background color */
+}
+
+/* Hover state only, not active */
+.collapsible {
+    cursor: pointer;
+    text-align: left;
+    font-size: 100%;
+    border: none;
+    width: 100%;
+    background-color: #E7F1F8; /* Original background color */
+}
+
+/* Active state styling */
+.collapsible.active {
+    background-color: #f1f1f1; /* Keeps original color when active */
+}
+
+/* Hover state takes precedence over active */
+.collapsible:hover, .collapsible.active:hover {
+    background-color: white; /* Always white on hover */
+}
+
+.content {
+    padding: 0 18px;
+    font-size: 90%;
+	display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.content p {
+    margin-top:    4px; /* Reduces the space above the paragraph */
+    margin-bottom: 4px; /* Reduces the space below the paragraph */
+}
+
+.content a {
+    text-color:  blue; 
+}
+
+
+.collapsible::before {
+    content: '+';
+    color: black; /* Adjust the color as needed */
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block; /* Ensures the symbol is aligned correctly */
+}
+
+.collapsible.active::before {
+    content: '-';
+}
+
+
+
 
 
 /* RIGHT PANELS   */

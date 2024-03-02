@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>	
+﻿<?xml version="1.0" encoding="UTF-8"?>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>Homepage of Peter Reinhard Hansen</title>
 <link rel="stylesheet" type="text/css" href="prh.css" media="screen" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<link rel="icon" href="prh.ico" type="image/x-icon">
 </head>
 <body>
 <div id="header">
@@ -30,27 +32,172 @@
 
 <div id="content">
 	<div id="left">
-		 <div class="boxlightblue">
-			<table class="center">
-				<caption class="affil">Ongoing Research Projects</caption>
-				<tr>
-					<th class="affil">Generalized Fisher Transformation </th>
-					<td> with Ilya Archakov (York)</td>
-				</tr>
-				<tr>
-					<th class="affil">Asset Pricing, Convolution-t </th>
-					<td> with Chen Tong (Xiamen)</td>
-				</tr>
-				<tr>
-					<th class="affil">Robust Correlation and Beta </th>
-					<td> with Yiyao Luo (U of Miss.)</td>
-				</tr>
-				<tr>
-					<th class="affil">Factors in High-dimensional Covariance Matrices </th>
-					<td> with Werner Ploberger (U of Wash.)</td>
-				</tr>
-			</table>
+		<div class="boxlightblue">
+			<div class="biobox">
+				<center>
+					<h1>Current Research Projects</h1>
+				</center>
+				I am working on several projects related to the <span class="text-high">New parametrization of Correlation Matrices</span> with Ilya Archakov,
+				and I work with Chen Tong on <span class="text-high">Asset Pricing with Time-Varying Pricing Kernel</span> and 
+				multivariate heavytailed distributions, <span class="text-high">Convolution-t Distributions</span>. With Yiyao Luo and several current students,
+				I work on <span class="text-high">Robust Correlations</span> and related quantities, and I work with Werner Ploberger on
+				<span class="text-high">Admissible Tests for Factor Structures in High-Dimensional Covariance Matrices</span>.			
+			</div>
 		</div>
+		<a class="mynav" href="https://arxiv.org/search/econ?searchtype=author&query=Hansen,+P+R">
+		<div class="boxlightblue">
+			<center>
+ 				<b>ArXiv</b> for recent working papers.
+			</center>
+		</div>
+		</a>
+		<a class="mynav" href="https://scholar.google.com/citations?user=i5i0fvAAAAAJ&hl=en">
+		<div class="boxlightblue">
+			<center>
+ 				<b>My Google Scholar Page</b>
+			</center>
+		</div>
+		</a>
+		<div class="paperbox">
+				<center>
+					<h1>Publications and Working Papers</h1>
+				</center>
+			<button class="collapsible">
+				Robust Estimation of Realized Correlation: New Insight about Intraday Fluctuations in Market Betas
+			</button>
+    		<div class="content">
+        		<p>Co-author(s): Yiyao Luo</p>
+        		<p><a href="https://arxiv.org/abs/2310.19992"">[ArXiv]</a></p>
+        		<p><b>Abstract:</b> Time-varying volatility is an inherent feature of most economic time-series,
+				which causes standard correlation estimators to be inconsistent. The quadrant correlation estimator
+				is consistent but very inefficient. We propose a novel subsampled quadrant estimator that improves
+				efficiency while preserving consistency and robustness. This estimator is particularly well-suited
+				for high-frequency financial data and we apply it to a large panel of US stocks. Our empirical analysis sheds
+				new light on intra-day fluctuations in market betas by decomposing them into time-varying correlations and relative volatility changes.
+				Our results show that intraday variation in betas is primarily driven by intraday variation in correlations.</p>
+    		</div>
+			</p>
+		    <button class="collapsible">
+				Option Pricing with Time-Varying Volatility Risk Aversion
+			</button>
+    			<div class="content">
+        			<p>Co-author(s): Chen Tong</p>
+        			<p><a href="https://arxiv.org/abs/2204.06943"">[ArXiv]</a></p>
+        			<p><b>Abstract:</b> We introduce a novel pricing kernel with time-varying variance risk aversion that yields closed-form expressions for the VIX. We also obtain closed-form expressions for option prices with a novel approximation method. The model can explain the observed time-variation in the shape of the pricing kernel. We estimate the model with S&P 500 returns and option prices and find that time-variation in volatility risk aversion brings a substantial reduction in derivative pricing errors. The variance risk ratio emerges as a fundamental variable and we show that it is closely related to economic fundamentals and key measures of sentiment and uncertainty.</p>
+    			</div>
+			</p>
+			</p>
+		    <button class="collapsible">
+				A Multivariate Realized GARCH Model
+			</button>
+    			<div class="content">
+        			<p>Co-author(s): Ilya Archakov, Asger Lunde</p>
+        			<p><a href="https://arxiv.org/abs/2012.02708"">[ArXiv]</a></p>
+        			<p><b>Abstract:</b> We propose a novel class of multivariate GARCH models that utilize realized measures of volatilities and correlations. The central component is an unconstrained vector parametrization of the correlation matrix that facilitates modeling of the correlation structure. The parametrization is based on the matrix logarithmic transformation that retains the positive definiteness as an innate property. A factor approach offers a way to impose a parsimonious structure in high dimensional system and we show that a factor framework arises naturally in some existing models. We apply the model to returns of nine assets and employ the factor structure that emerges from a block correlation specification. An auxiliary empirical finding is that the empirical distribution of parametrized realized correlations is approximately Gaussian. This observation is analogous to the well-known result for logarithmically transformed realized variances.
+    			</div>
+			</p>
+		    <button class="collapsible">
+				Characterizing Correlation Matrices that Admit a Clustered Factor Representation
+			</button>
+    			<div class="content">
+       				<p> Hansen, P.R. and C. Tong (2023) <i>Economic Letters</i> Vol. 233, 111433</p>
+        			<p><a href="https://arxiv.org/abs/2308.05895">[ArXiv]</a></p>
+        			<p><b>Abstract:</b> The Clustered Factor (CF) model induces a block structure on the correlation matrix and is commonly used to parameterize correlation matrices. Our results reveal that the CF model imposes superfluous restrictions on the correlation matrix. This can be avoided by a different parametrization, involving the logarithmic transformation of the block correlation matrix.
+    			</div>
+			</p>
+		    <button class="collapsible">
+				A New Method for Generating Random Correlation Matrices
+			</button>
+    			<div class="content">
+        			<p>Archakov, I, P.R. Hansen and Y. Luo (2024) <i>Econometrics Journal</i></p>
+        			<p><a href="https://arxiv.org/abs/2210.08147">[ArXiv]</a></p>
+        			<p><b>Abstract:</b> We propose a new method for generating random correlation matrices that makes it simple to control both location and dispersion. The method is based on a vector parameterization,
+					<script type="math/tex">\gamma=g(C)</script>, which maps any distribution on
+					<script type="math/tex">\mathbb{R}^d,\ d = n(n-1)/2</script> to a distribution on the space of non-singular nxn correlation matrices. Correlation matrices with certain properties, such as being well-conditioned, having block structures, and having strictly positive elements, are simple to generate. We compare the new method with existing methods.
+    			</div>
+			</p>
+		    <button class="collapsible">
+				Option Pricing with State-dependent Pricing Kernel
+			</button>
+    			<div class="content">
+        			<p>Hansen, P.R., C. Tong, and A. Huang (2022) <i>Journal of Futures Markets</i> Vol. 42, 1409-1433</p>
+        			<p><a href="https://arxiv.org/abs/2112.05308">[ArXiv]</a></p>
+        			<p><b>Abstract:</b> We introduce a new volatility model for option pricing that combines Markov switching with the Realized GARCH framework. This leads to a novel pricing kernel with a state-dependent variance risk premium and a pricing formula for European options, which is derived with an analytical approximation method. We apply the Markov switching Realized GARCH model to S&P 500 index options from 1990 to 2019 and find that investors' aversion to volatility-specific risk is time-varying. The proposed framework outperforms competing models and reduces (in-sample and out-of-sample) option pricing errors by 15% or more.
+    			</div>
+			</p>
+		    <button class="collapsible">
+				Realized GARCH, CBOE VIX, and the Volatility Risk Premium
+			</button>
+   			<div class="content">
+       			<p>Hansen, P.R., A. Huang, C. Tong, and T Wang (2024) <i>Journal of Financial Econometrics</i> Vol. 22, 187–223.</p>
+       			<p><a href="https://arxiv.org/abs/2112.05302">[ArXiv]</a></p>
+       			<p><b>Abstract:</b> We show that the Realized GARCH model yields close-form expression for both the Volatility Index (VIX) and the volatility risk premium (VRP). The Realized GARCH model is driven by two shocks, a return shock and a volatility shock, and these are natural state variables in the stochastic discount factor (SDF). The volatility shock endows the exponentially affine SDF with a compensation for volatility risk. This leads to dissimilar dynamic properties under the physical and risk-neutral measures that can explain time-variation in the VRP. In an empirical application with the S&P 500 returns, the VIX, and the VRP, we find that the Realized GARCH model significantly outperforms conventional GARCH models.
+   			</div>
+			</p>
+		    <button class="collapsible">
+				Relative Contagiousness of Emerging Virus Variants: An Analysis of the Alpha, Delta, and Omicron SARS-CoV-2 Variants
+			</button>
+   			<div class="content">
+       			<p>Hansen, P.R. (2022) <i>Econometrics Journal</i> Vol. 25, 739-761.</p>
+       			<p><a href="https://arxiv.org/abs/2110.00533">[ArXiv]</a>   <a href="https://www.youtube.com/watch?v=u5kkwe3aXLM">[YouTube]</a></p>
+       			<p><b>Abstract:</b> We propose a simple dynamic model for estimating the relative contagiousness of two virus variants. Maximum likelihood estimation and inference is conveniently invariant to variation in the total number of cases over the sample period and can be expressed as a logistic regression. We apply the model to Danish SARS-CoV-2 variant data. We estimate the reproduction numbers of Alpha and Delta to be larger than that of the ancestral variant by a factor of 1.51 [CI 95%: 1.50, 1.53] and 3.28 [CI 95%: 3.01, 3.58], respectively. In a predominately vaccinated population, we estimate Omicron to be 3.15 [CI 95%: 2.83, 3.50] times more infectious than Delta. Forecasting the proportion of an emerging virus variant is straight forward and we proceed to show how the effective reproduction number for a new variant can be estimated without contemporary sequencing results. This is useful for assessing the state of the pandemic in real time as we illustrate empirically with the inferred effective reproduction number for the Alpha variant.
+   			</div>
+			</p>
+		    <button class="collapsible">
+				How should parameter estimation be tailored to the objective?
+			</button>
+   			<div class="content">
+       			<p>Hansen, P.R. and E. Dumitrescu (2022) <i>Journal of Econometrics</i> Vol. 230, 535-558.</p>
+       			<p><a href="papers/InSampleOutofSampleCriteria.pdf">[PDF]</a></p>
+       			<p><b>Abstract:</b>
+					We study parameter estimation from the sample <script type="math/tex">\mathcal{X}</script>, when
+					the objective is to maximize the expected value of a criterion function,
+					<script type="math/tex">Q</script>, for a distinct sample, <script type="math/tex">\mathcal{Y}</script>. This is the situation
+					that arises when a model is estimated for the purpose of describing
+					other data than those used for estimation, such as in forecasting
+					problems. A natural candidate for solving <script type="math/tex">\max_{T\in\sigma(\mathcal{X})}\mathbb{E}Q(\mathcal{Y},T)</script>
+					is the <i>innate</i> estimator, <script type="math/tex">\hat{\theta}=\arg\max_{\theta}Q(\mathcal{X},\theta)</script>.
+					While the innate estimator has certain advantages, we show that the
+					asymptotically efficient estimator takes the form <script type="math/tex">\tilde{\theta}=\arg\max_{\theta}\tilde{Q}(\mathcal{X},\theta)</script>,
+					where <script type="math/tex">\tilde{Q}</script> is defined from a likelihood function in conjunction
+					with <script type="math/tex">Q</script>. The likelihood-based estimator is, however, fragile, as
+					misspecification is harmful in two ways. First, the likelihood-based
+					estimator may be inefficient under misspecification. Second, and more
+					importantly, the likelihood approach requires a parameter transformation
+					that depends on the true model, causing an improper mapping to be
+					used under misspecification.
+   			</div>
+			</p>
+		    <button class="collapsible">
+				A New Parametrization of Correlation Matrices
+			</button>
+   			<div class="content">
+       			<p>Archakov, I, and P.R. Hansen (2021) <i>Econometrica</i> Vol. 89, 1699-1715.</p>
+       			<p><a href="https://arxiv.org/abs/2012.02395">[ArXiv]</a> <a href="https://www.youtube.com/watch?v=EvWW2RNa_dk">[YouTube]</a></p>
+       			<p><b>Abstract:</b> We introduce a novel parametrization of the correlation matrix. The reparametriza- tion facilitates modeling of correlation and covariance matrices by an unrestricted vector, where positive definiteness is an innate property. This parametrization can be viewed as a generalization of Fisher’s Z-transformation to higher dimensions and has a wide range of potential applications. An algorithm for reconstructing the unique <script type="math/tex">n\times n</script> correlation matrix from any vector in <script type="math/tex">\mathbb{R}^d,\ d = n(n-1)/2</script> is provided, and we derive its numerical complexity.
+   			</div>
+			</p>
+		    <button class="collapsible">
+				A Canonical Representation of Block Matrices with Applications to Covariance and Correlation Matrices
+			</button>
+   			<div class="content">
+       			<p>Archakov, I, and P.R. Hansen (2024) <i>Review of Economics and Statistics</i></p>
+       			<p><a href="https://arxiv.org/abs/2012.02698">[ArXiv]</a></p>
+       			<p><b>Abstract:</b> We obtain a canonical representation for block matrices. The representation facilitates simple computation of the determinant, the matrix inverse, and other powers of a block matrix, as well as the matrix logarithm and the matrix exponential. These results are particularly useful for block covariance and block correlation matrices, where evaluation of the Gaussian log-likelihood and estimation are greatly simplified. We illustrate this with an empirical application using a large panel of daily asset returns. Moreover, the representation paves new ways to regularizing large covariance/correlation matrices, test block structures in matrices, and estimate regressions with many variables.
+   			</div>
+			</p>
+		    <button class="collapsible">
+				Periodicity in Cryptocurrency Volatility and Liquidity
+			</button>
+   			<div class="content">
+       			<p>Hansen P.R., C. Kim, W. Kimbrough (2024) <i>Journal of Financial Econometrics</i> Vol. 22, 224-251.</p>
+       			<p><a href="https://arxiv.org/abs/2109.12142">[ArXiv]</a></p>
+       			<p><b>Abstract:</b> We study recurrent patterns in volatility and volume for major cryptocurrencies, Bitcoin and Ether, using data from two centralized exchanges (Coinbase Pro and Binance) and a decentralized exchange (Uniswap V2). We find systematic patterns in both volatility and volume across day-of-the-week, hour-of-the-day, and within the hour. These patterns have grown stronger over the years and can be related to algorithmic trading and funding times in futures markets. We also document that price formation mainly takes place on the centralized exchanges while price adjustments on the decentralized exchanges can be sluggish.
+   			</div>
+		</div>
+		
+
+		
 	</div>
 	<div id="right">
 		<div class="boxpicture">
@@ -62,11 +209,31 @@
 		<center>
 			<address>
 				<br/>
-				Last updated: February, 2024
+				...
 				<br/>
 			</address>
 		</center>
 		</p>
 	</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+
 </body>
 </html>
