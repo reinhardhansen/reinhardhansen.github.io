@@ -2,8 +2,8 @@ html,body{margin:0;padding:0}
 body{font: 95%/1.3 TrebuchetMS,Arial,sans-serif;
     text-align: left;background: #fff;padding-bottom:20px}
 a  { color: #0066B3; background: inherit; text-decoration: none;}
-h1 { font: bold 1.9em Arial, Arial, Sans-Serif; color: #036DA7; padding: 0;}
-h2 { font: bold 1.1em Arial, Arial, Sans-Serif; padding: 0; margin: 0; }
+h1 { font: bold 1.8em Arial, Arial, Sans-Serif; color: #036DA7; padding: 0;}
+h2 { font: bold 1.2em Arial, Arial, Sans-Serif; padding: 0; margin: 0; }
 h3 { font: bold 1.1em Arial, Arial, Sans-Serif; padding: 0; margin: 0; }
 
 div#header{width:100%;overflow:hidden;background: #6699CC; }
@@ -78,9 +78,7 @@ img.floatRight {   float: right;    margin: 4px; 	}
 
 
 /* LEFT PANELS   */
-
-
-
+ 
 #left {
 	float: left;
 	width: 73.4%;
@@ -186,6 +184,14 @@ img.floatRight {   float: right;    margin: 4px; 	}
 }
 
 /* RESEARCH PAPERS COLLAPSIBLE */
+
+.yearbox{
+	vertical-align: top;
+	font-size:90%;
+	padding: 0em;
+	margin: 0 0 0 0;
+	background: #E7F1F8;
+}
 .paperbox{
     font-size: 100%;
 	padding: 1.5em;
@@ -202,6 +208,7 @@ img.floatRight {   float: right;    margin: 4px; 	}
 	text-align: left;
 	font-size: 90%;
 	border: none;
+    margin-bottom: 4px; 
 	width: 100%;
 	background-color: #E7F1F8; /* Original background color */
 }
