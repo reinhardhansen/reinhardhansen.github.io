@@ -15,7 +15,7 @@ ul#nav,ul#nav li{	list-style-type:none;
 			margin:0; 
 			padding:0; }
 ul#nav{		float:left;
-			width: 500px; 
+			width: 600px; 
 			font-size: 80%}
 ul#nav li{	float:left;
 			width: 100px; 
@@ -457,4 +457,29 @@ ul {
 	text-indent: -1em;
 	}
 
+
+
+/* CURRENT RESEARCH PROJECTS (itemized list on research.html) */
+#left .biobox ul.projects {
+	list-style: disc;
+	text-align: left;
+	margin: 0.8em 0 0 0;
+	padding-left: 1.2em;
+	text-indent: 0;
+}
+#left .biobox ul.projects li {
+	margin-bottom: 0.6em;
+}
+
+
+/* SOFTWARE PAGE (replication-code list) */
+.paperbox ul.replist {
+	list-style: disc;
+	margin: 0.5em 0 0 0;
+	padding-left: 1.2em;
+	text-indent: 0;
+}
+.paperbox ul.replist li {
+	margin-bottom: 0.5em;
+}
 

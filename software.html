@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLEHZWEG7F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLEHZWEG7F');
+</script>
+<title>Homepage of Peter Reinhard Hansen</title>
+<link rel="stylesheet" type="text/css" href="prh.css" media="screen" />
+<link rel="icon" href="prh.ico" type="image/x-icon">
+</head>
+<body>
+<div id="header">
+	<table width="100%">
+		<tr><td><h1>Peter Reinhard Hansen</h1> </td>
+			<td><address>
+				<b> </b>    	<br/>
+				Department of Economics 	<br/>
+				141 South Rd, Gardner Hall			<br/>
+				Chapel Hill, NC 27599-3305, USA
+			    </address>
+			</td>
+		</tr>
+	</table>
+	<div id="menu">
+		<ul id="nav">
+		   <li><a href="index.html">Main Page</a></li>
+		   <li><a href="peterhansen.html">About Me</a></li>
+		   <li><a href="research.html">Research</a></li>
+		   <li><a href="software.html">Software</a></li>
+		   <li><a href="teaching.html">Teaching</a></li>
+  		</ul>
+	</div>
+</div>
+
+<div id="content">
+	<div id="left">
+		<div class="boxlightblue">
+			<div class="biobox">
+				<center>
+					<h1>Software</h1>
+				</center>
+				Open-source code accompanying my research: software packages and replication code.
+				Everything is available on <a href="https://github.com/reinhardhansen">GitHub</a> under the MIT license.
+			</div>
+		</div>
+		<div class="paperbox">
+			<center>
+				<h1>Packages</h1>
+			</center>
+			<button class="collapsible">
+				voigtinference: Exact Likelihood Calculus and Conditional Attribution for the Voigt Profile
+			</button>
+			<div class="content">
+				<p>Co-author(s): Chen Tong</p>
+				<p>Python (NumPy/SciPy) and Julia (VoigtInference.jl): two implementations with a common interface, cross-validated to within 10<sup>&minus;12</sup>.</p>
+				<p><a href="https://github.com/reinhardhansen/voigtinference">[GitHub]</a> <a href="https://arxiv.org/abs/2609.27969">[Software note, arXiv]</a> <a href="https://arxiv.org/abs/2605.01665">[Theory paper, arXiv]</a></p>
+				<p><b>Description:</b> Exact likelihood calculus and conditional attribution for the Voigt profile, the convolution of a Gaussian and a Cauchy distribution: density, score, Hessian, Fisher information, maximum likelihood estimation, and the conditional moments of the Gaussian component (deconvolution), all from a single Faddeeva evaluation per observation and with numerically robust far-tail behavior. Installation and quick-start examples are in the README on GitHub.</p>
+			</div>
+			</p>
+			<button class="collapsible">
+				GFT: Generalized Fisher Transformation of Correlation Matrices
+			</button>
+			<div class="content">
+				<p>Co-author(s): Ilya Archakov</p>
+				<p>Julia package (GFT.jl) and an R port with the same API (base R only), available on CRAN.</p>
+				<p><a href="https://github.com/reinhardhansen/GFT">[GitHub]</a> <a href="https://CRAN.R-project.org/package=GFT">[CRAN]</a> <a href="https://arxiv.org/abs/2609.19028">[Paper, arXiv]</a></p>
+				<p><b>Install:</b> R: <code>install.packages("GFT")</code> &nbsp;&nbsp; Julia: <code>using Pkg; Pkg.add(url = "https://github.com/reinhardhansen/GFT")</code></p>
+				<p><b>Description:</b> Forward and inverse generalized Fisher transformation of correlation matrices, &gamma; = vecl(log C), which maps the positive definite correlation matrices one-to-one onto the Euclidean space of dimension n(n&minus;1)/2 (Archakov and Hansen, 2021, <i>Econometrica</i>). The inverse is computed with the GFT-FP+N algorithm: matrix-free inexact Newton steps with fixed-point safeguards that guarantee global convergence.</p>
+			</div>
+			</p>
+		</div>
+		<div class="paperbox">
+			<center>
+				<h1>Replication Code</h1>
+			</center>
+			<ul class="replist">
+				<li>Bartlett Couplings of the Onion and Vine LKJ Samplers (2026).
+					<a href="https://github.com/reinhardhansen/BartlettLKJ">[Code]</a> <a href="https://doi.org/10.5281/zenodo.22088155">[Zenodo]</a> <a href="https://arxiv.org/abs/2608.06116">[arXiv]</a></li>
+				<li>Exact Likelihood Inference and Robust Filtering for Gauss-Cauchy Convolution Models, with Chen Tong (2026).
+					<a href="https://github.com/reinhardhansen/GaussCauchyConvolution-Replication">[Code]</a> <a href="https://arxiv.org/abs/2605.01665">[arXiv]</a></li>
+				<li>Generalized Reduced Rank Regression.
+					<a href="https://github.com/reinhardhansen/GRRR">[Code]</a></li>
+				<li>Principled Identification of Structural Dynamic Models, with Neville Francis and Chen Tong (2025).
+					<a href="https://github.com/reinhardhansen/OASIS-Replication">[Code]</a> <a href="https://arxiv.org/abs/2512.17005">[arXiv]</a></li>
+				<li>Moments by Integrating the Moment-Generating Function, with Chen Tong (2024).
+					<a href="https://github.com/reinhardhansen/Moments-MGF-Replication">[Code]</a> <a href="https://arxiv.org/abs/2410.23587">[arXiv]</a></li>
+				<li>Relative Contagiousness of Emerging Virus Variants: An Analysis of the Alpha, Delta, and Omicron SARS-CoV-2 Variants, <i>Econometrics Journal</i> (2022).
+					<a href="https://github.com/reinhardhansen/VirusVariantsReplicationFiles">[Code]</a> <a href="https://arxiv.org/abs/2110.00533">[arXiv]</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="right">
+		<div class="boxlightblue">
+			<center><b>GitHub</b><br/><a href="https://github.com/reinhardhansen">github.com/reinhardhansen</a></center>
+		</div>
+	</div>
+	<div id="footer">
+		<center>
+			<address>
+				<br/>
+				Last updated: September, 2026
+				<br/>
+			</address>
+		</center>
+	</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

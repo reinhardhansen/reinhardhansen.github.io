@@ -34,6 +34,7 @@
 		   <li><a href="index.html">Main Page</a></li>
 		   <li><a href="peterhansen.html">About Me</a></li>
 		   <li><a href="research.html">Research</a></li>
+		   <li><a href="software.html">Software</a></li>
 		   <li><a href="teaching.html">Teaching</a></li>
   		</ul>
 	</div>
@@ -46,19 +47,32 @@
 				<center>
 					<h1>Current Research Projects</h1>
 				</center>
-				I am working with Neville Francis and Chen Tong on <span class="text-high">OASIS</span>, which is an appealing way of rotating
-				a vector of correlated errors into uncorrelated elements. This has applications in areas such as
-				identification of structural dynamic macro models. I am also working on several projects related to correlation matrices, including the <span class="text-high">Generalized Fisher Transformation</span>
-				(a new parametrization of correlation matrices) with Ilya Archakov.
-				In collaboration with Chen Tong I work on <span class="text-high">New integral expressions for moments</span> that are computationally attractive and
-				lead to <span class="text-high">new expressions for special functions</span>, including the
-				<span class="text-high">Gamma function</span> and the <span class="text-high">Riemann zeta function.</span>
-				We also work on multivariate heavytailed distributions, <span class="text-high">Convolution-t Distributions</span>. With Yiyao Luo and several current students,
-				I work on <span class="text-high">Robust Correlations</span> and related quantities, and I work with Werner Ploberger on
-				<span class="text-high">Admissible Tests for Factor Structures in High-Dimensional Covariance Matrices</span>.
-				Recently, I started to collaborate with Kim Christensen and Allan Timmermann on the
-				<span class="text-high">modeling of electricity prices</span>,
-				including volatility in these markets and the relation to renewables.
+				<ul class="projects">
+					<li><b>Correlation Matrices</b><br/>
+						With Ilya Archakov, I work on the <span class="text-high">Generalized Fisher Transformation</span>, a new parametrization of
+						correlation matrices. I also work on <span class="text-high">Correlation Matrices in High Dimensions</span>, and with Werner
+						Ploberger and Chen Tong on <span class="text-high">Testing Factor Structures</span> in high-dimensional covariance matrices.
+					</li>
+					<li><b>OASIS</b><br/>
+						With Neville Francis and Chen Tong, I work on <span class="text-high">OASIS</span>, which is an appealing way of rotating
+						a vector of correlated errors into uncorrelated elements. This has applications in areas such as identification of
+						structural dynamic macro models. OASIS is connected to the correlation-matrix project through
+						<script type="math/tex">C^{1/2}</script>, the square root of the correlation matrix.
+					</li>
+					<li><b>Energy</b><br/>
+						With Kim Christensen and Allan Timmermann, I work on the <span class="text-high">modeling of electricity prices</span>,
+						including how to define volatility and market structures in these markets.
+					</li>
+					<li><b>Filtering</b><br/>
+						With Chen Tong, I work on exact likelihood inference and robust filtering with <span class="text-high">Gauss-Cauchy convolutions</span>,
+						and on <span class="text-high">Tweedie&#39;s formula</span> and score-driven updating.
+					</li>
+					<li><b>Other and Older Projects</b><br/>
+						With Chen Tong, I work on <span class="text-high">New integral expressions for moments</span>, leading to new expressions for special
+						functions, including the <span class="text-high">Gamma function</span> and the <span class="text-high">Riemann zeta function</span>.
+						We also work on <span class="text-high">multivariate GARCH</span> models with heavy-tailed distributions.
+					</li>
+				</ul>
 			</div>
 		</div>
 		<a class="mynav" href="https://arxiv.org/search/?searchtype=author&query=Hansen,+P+R">
@@ -85,6 +99,60 @@
 				<td class="yearbox">
 				</td>
 				<td>
+					<button class="collapsible">
+						Local Optimality and Rigidity of Frobenius Tests for Dense High-Dimensional Covariance Alternatives
+					</button>
+					<div class="content">
+						<p>Co-author(s): Werner Ploberger, Chen Tong</p>
+						<p><a href="https://arxiv.org/abs/2609.27200">[ArXiv]</a></p>
+						<p><b>Abstract:</b> We study identity testing for high-dimensional covariance matrices against dense alternatives of unknown direction, with p/n &rarr; &gamma;. Along a globally positive quadratic precision path, mixing Gaussian alternatives over a Gaussian Orthogonal Ensemble direction yields a contiguous experiment whose log-likelihood reduces to the corrected Frobenius statistic; its upper-tail test attains the limiting weighted-power envelope at every fixed strength. Fixing the prior's Frobenius radius perturbs the mixture by only O(p<sup>&minus;1/2</sup>) in total variation, and exact whitening carries the experiment, the statistic, and its null law to any known null covariance. Separately, under a product-coordinate null, feasibility needs only 4+&eta; moments, plus identical distributions over time when means are estimated; studentization and an exact degrees-of-freedom correction preserve the local power. A stability inequality turns near-envelope attainment into null agreement with the Frobenius rule, so uniform noninferiority on the typical dense bulk precludes gains at any contiguous alternative. For trace-matched rank-one alternatives, the corrected statistic is the first likelihood direction when &#977;<sub>n</sub> &rarr; 0 and n&#977;<sub>n</sub> &rarr; &infin;; at fixed strength, the log-likelihood ratio in the Onatski-Moreira-Hallin fixed-spike benchmark is governed by a richer linear spectral statistic below the Baik-Ben Arous-P&eacute;ch&eacute; threshold, while eigenvalue separation permits cost-free largest-eigenvalue enhancement above it. Simulations illustrate the theory.</p>
+					</div>
+					</p>
+					<button class="collapsible">
+						Fast Inversion of the Generalized Fisher Transformation of Correlation Matrices
+					</button>
+					<div class="content">
+						<p>Co-author(s): Ilya Archakov</p>
+						<p><a href="https://arxiv.org/abs/2609.19028">[ArXiv]</a></p>
+						<p><b>Abstract:</b> The generalized Fisher transformation maps a non-singular correlation matrix to an unconstrained real vector through the off-diagonal elements of its matrix logarithm. Evaluating its inverse is a computational bottleneck in dynamic correlation and multivariate volatility models. We develop a fast inversion algorithm by characterizing the unknown diagonal as the minimizer of a smooth, strictly convex, and coercive objective. An explicit Hessian and global spectral bounds identify the standard fixed-point iteration as a quasi-Newton method and explain why it can converge slowly near singularity. Every fixed-point step decreases the objective, and the iteration converges from every starting point. These results motivate GFT-FP+N, a hybrid of fixed-point and matrix-free Newton steps that never forms the Jacobian. In benchmarks with up to 1,000 replications per design and dimensions up to 800, GFT-FP+N reduces computation time by up to a factor of forty-five relative to the fixed-point iteration and converged in every replication, including on designs where Broyden's method almost always fails. Julia and R packages are provided.</p>
+					</div>
+					</p>
+					<button class="collapsible">
+						Bartlett Couplings of the Onion and Vine LKJ Samplers
+					</button>
+					<div class="content">
+						<p>Single-authored</p>
+						<p><a href="https://arxiv.org/abs/2608.06116">[ArXiv]</a></p>
+						<p><b>Abstract:</b> The extended-onion and C-vine constructions of Lewandowski, Kurowicka and Joe (2009) are standard methods for sampling from the LKJ<sub>n</sub>(&eta;) distribution on correlation matrices. We show that both arise from the simpler row-normalized Bartlett construction associated with the restricted-Wishart representation of Wang, Wu and Chu (2018), which exposes redundancies hidden in standard gamma-based implementations of the classical constructions. Two exact row-wise couplings establish this: the squared norm of the Gaussian vector supplying the onion's direction has exactly the Gamma law required for one component of the Beta radius, and the same vector, with one chi-squared variate, generates the entire row of mutually independent C-vine partial correlations with their required symmetric-Beta laws. We also show that, relative to flat off-diagonal measure, the LKJ family maximizes entropy at fixed expected log-determinant; the dual natural parameter is &eta;&minus;1. Under gamma-ratio accounting, normalized Bartlett, the onion, and the conventional symmetric-Beta C-vine require n&minus;1, 2(n&minus;1), and n(n&minus;1) Gamma-equivalent calls. Controlled benchmarks confirm a low-dimensional advantage over the onion implementation and a persistent advantage over the C-vine implementations examined; direct Bartlett normalization also avoids subtractive complements, moving the small-&eta; zero-diagonal threshold from machine-epsilon scale toward the subnormal range. The sampler is valid for every real &eta; &gt; 0 and requires only standard normal and chi-squared variates.</p>
+					</div>
+					</p>
+					<button class="collapsible">
+						Correlation Matrices in High Dimensions: The Elliptope as a Sample-Correlation Ensemble
+					</button>
+					<div class="content">
+						<p>Single-authored</p>
+						<p><a href="https://arxiv.org/abs/2608.04162">[ArXiv]</a></p>
+						<p><b>Abstract:</b> The set of n&times;n correlation matrices, known as the elliptope, has volume decaying at the super-exponential rate exp{&minus;(1/4)n<sup>2</sup>log n}. We characterize where this vanishing volume concentrates. A uniform draw is entrywise close to the identity yet globally far from it and nearly singular: its maximum absolute correlation is of order &radic;(log n/n), its Frobenius distance is asymptotic to &radic;n, its empirical spectral distribution converges to the Marchenko-Pastur law with ratio one, and its smallest eigenvalue has the exact Beta(1,d) distribution, where d=n(n&minus;1)/2, and is therefore of order n<sup>&minus;2</sup>. More generally, distinct off-diagonal entries are exactly pairwise independent under every LKJ(&eta;) law. For the uniform law, this yields a Chen-Stein proof of the extreme-correlation point-process limit and an O(n<sup>&minus;1</sup>) total-variation bound for finite-dimensional exceedance counts relative to Poisson laws with their exact finite-n means. We also identify two distinct scales: &eta;<sub>n</sub> &#8781; n alters the limiting spectrum, whereas &eta;<sub>n</sub> &#8781; n<sup>2</sup> is needed to keep the Frobenius distance bounded. Finally, for a bounded, centered i.i.d. off-diagonal specification, projection to the nearest correlation matrix incurs a squared repair cost asymptotically at least one-half of the squared Frobenius norm of its off-diagonal part.</p>
+					</div>
+					</p>
+					<button class="collapsible">
+						The Quarter-Hour Effect: Periodic Algorithmic Trading and Return Predictability in Cryptocurrency Futures
+					</button>
+					<div class="content">
+						<p>Co-author(s): Chan Kim</p>
+						<p><a href="https://arxiv.org/abs/2607.09426">[ArXiv]</a></p>
+						<p><b>Abstract:</b> Cryptocurrency markets exhibit periodic bursts in volatility and volume at one-minute, five-minute, and quarter-hour marks. Using trade data for six Binance perpetual contracts, we link these bursts to algorithmic participation: trade-size roundness declines sharply during them. The Autocorrelation Map, a clock-phase-resolved display, reveals serial dependence in order flow and returns at quarter-hour openings that conventional measures obscure. Opening returns are predictable out of sample, while opening order imbalance predicts returns over four to twelve hours, with much weaker effects at finer clock-time frequencies. Together, these findings characterize periodic algorithmic trading and its cross-frequency variation.</p>
+					</div>
+					</p>
+					<button class="collapsible">
+						Split-Session Cluster GARCH for Overnight and Intraday Returns: The Role of Tail Heterogeneity
+					</button>
+					<div class="content">
+						<p>Co-author(s): Xinxian Chen, Chen Tong</p>
+						<p><a href="https://arxiv.org/abs/2607.03669">[ArXiv]</a></p>
+						<p><b>Abstract:</b> We propose the Split-Session Cluster GARCH model for heavy-tailed multivariate dependence among asset returns decomposed into overnight and intraday components. The model uses convolution-t distributions to allow tail behavior to differ across clusters defined by trading sessions and, within each session, by economic sectors. It also accommodates block-structured conditional correlation matrices, preserving parsimony and scalability in high-dimensional settings. The resulting likelihood remains tractable and yields a score-driven specification for dynamic correlations. We apply the model to U.S. equity returns in six-asset and 100-asset applications. The results reveal pronounced tail heterogeneity between overnight and intraday returns. Model comparisons show that session-specific tail parameters substantially improve fit relative to a common multivariate-t specification, while sector-level tail partitioning delivers additional gains concentrated mainly in the overnight component. In the 100-asset application, asset-level tail heterogeneity delivers the strongest out-of-sample likelihood and global minimum-variance (GMV) portfolio performance.</p>
+					</div>
+					</p>
 					<button class="collapsible">
 						The Generalized Fisher Transformation: Finite-Sample Properties and Inference
 					</button>
